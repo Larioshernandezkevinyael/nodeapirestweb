@@ -1,0 +1,91 @@
+###
+POST http://localhost:9000/api/users HTTP/1.1
+Content-Type: application/json
+
+{ 
+    "Nombre" : "Maria de los Angeles",
+    "Apellido": "Saragoza Hurgan",
+    "Correo": "mariasaragosaangeles@gmail.com",
+    "password": "zrase2ge3" ,
+    "telefono": 7784512485,
+    "tipo_id":  "641963f3a585a3cba253df3e"
+}
+
+###
+POST  http://localhost:9000/api/user HTTP/1.1
+Content-Type: application/json
+
+{
+     "Correo": "we.comde@gmail.com",
+     "password": 815619851 
+}
+
+###
+GET http://localhost:9000/api/users HTTP/1.1
+
+
+
+
+
+
+///////////////////////////////////productos///////////////////////////////////
+###
+POST http://localhost:9000/api/producto HTTP/1.1
+Content-Type: application/json
+
+{ 
+"nombre":"precio",
+"descripcion":"producto",
+"precio":458,
+"imagen":"/assests/hot.jfif",
+"categoria":"641918a0e340324fe10a8223",
+"disponibles":"6417b48e5821bb890225dfca",
+"presentacion":"6417b47d5821bb890225dfc8"
+}
+
+
+###
+GET http://localhost:9000/api/producto HTTP/1.1
+
+###
+GET http://localhost:9000/api/producto/642113880ba2420372876541 HTTP/1.1
+
+
+////////////////////////tipousuario///////////////////////////////////
+###
+POST http://localhost:9000/api/tipousuario HTTP/1.1
+Content-Type: application/json
+
+{
+    "tipo":"cliente"
+}
+
+///////////////////////PRESENTACION////////////////////////////////
+###
+POST http://localhost:9000/api/presentacion HTTP/1.1
+Content-Type: application/json
+
+{
+    "presentacion":"pieza"
+}
+//////////////////////////disponibilidad////////////////////////////////
+###
+POST  http://localhost:9000/api/disponibilidad HTTP/1.1
+Content-Type: application/json
+
+{
+    "disponibles":100
+}
+
+
+////////////////////////categoria////////////////////////////////
+
+###
+POST http://localhost:9000/api/categoria HTTP/1.1
+Content-Type: application/json
+
+{
+    "categoria":"shampoo"
+}
+###
+GET http://localhost:9000/api/categoria HTTP/1.1
